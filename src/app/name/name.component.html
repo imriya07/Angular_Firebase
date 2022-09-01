@@ -1,0 +1,17 @@
+<table class="table" *ngIf="upDatedUser.length">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of upDatedUser">
+        <td>{{x.name}}</td>
+        <td>{{x.score}}</td>
+        <td><button (click)="addToWinner(x)">Add to Winners</button></td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>

@@ -1,0 +1,19 @@
+<table class="table" *ngIf="upDatedUser.length">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Score</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of upDatedUser">
+        <td>{{x.name}}</td>
+        <td>{{x.age}}</td>
+        <td>{{x.score}}</td>
+        <td>{{x.status}}</td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
